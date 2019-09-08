@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-back-button slot="start" text="Regresar" defaultHref="tabs/categorias">
+            </ion-back-button>
+        </ion-buttons>
+        <ion-title>SHEIN</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content fullscreen>
+    <ion-card *ngFor="let a of articleData">
+        <img src="{{a.imgUrl}}" />
+        <ion-card-header>
+            <ion-card-title>{{a.nickName}} ${{a.precio}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            {{a.descripcion}}
+            <br>
+            <ion-button color="light" (click)="navigate(a.idArticulo)">VER MAS</ion-button>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

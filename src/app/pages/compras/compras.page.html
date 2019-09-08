@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-back-button slot="start" text="Regresar" defaultHref="tabs/user-info">
+            </ion-back-button>
+        </ion-buttons>
+        <ion-title>TUS COMPRAS</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list *ngIf="mostrar>0">
+        <ion-item *ngFor="let a of articleData">
+            <ion-avatar slot="start">
+                <img src="{{a.imgUrl}}">
+            </ion-avatar>
+            <ion-label color="dark">
+                <h1><strong>{{a.nickName}}</strong></h1>
+                <h2> Cantidad: {{a.cantidad}} <strong>${{a.precioPedido}}</strong> </h2>
+            </ion-label>
+            <!-- <ion-label text-wrap color="dark"> </ion-label> -->
+            <!-- <ion-button color="danger" slot="end" (click)="eliminar(a.idPK, a.precioPedido)">
+                <ion-icon name="trash"></ion-icon>
+            </ion-button> -->
+        </ion-item>
+    </ion-list>
+</ion-content>

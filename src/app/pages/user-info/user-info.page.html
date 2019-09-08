@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-back-button slot="start" text="Regresar" defaultHref="tabs/home">
+            </ion-back-button>
+        </ion-buttons>
+        <ion-title>Tu Perfil</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form #formulario="ngForm" (ngsubmit)="onSubmitTemplate()">
+        <ion-list>
+            <ion-list-header>
+                <ion-label>Ingresa tus datos para formar parte</ion-label>
+            </ion-list-header>
+            <!-- <ion-item> -->
+            <ion-avatar class="avatars">
+                <img src="{{usuario.imgUrl}}">
+            </ion-avatar>
+            <!-- </ion-item> -->
+            <ion-item>
+                <ion-label position="floating">Nickname</ion-label>
+                <ion-input [(ngModel)]="usuario.nickName" name="nickName" requerid></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Nombre Completo</ion-label>
+                <ion-input [(ngModel)]="usuario.nombre" name="nombre" placeholder="ingresa tu apeido paterno"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Apeido Paterno</ion-label>
+                <ion-input [(ngModel)]="usuario.aPaterno" name="paterno" placeholder="ingresa tu apeido paterno"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Apeido Materno</ion-label>
+                <ion-input [(ngModel)]="usuario.aMaterno" name="materno" placeholder="ingresa tu apeido materno"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Email</ion-label>
+                <ion-input type="email" [(ngModel)]="usuario.email" name="email" requerid pattern="^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Password</ion-label>
+                <ion-input type="password" [(ngModel)]="usuario.password" name="password" patter="password" requerid></ion-input>
+            </ion-item>
+        </ion-list>
+        <ion-button expand="full" type="submit" color="tertiary" routerLink="/compras">
+            Mis Compras
+        </ion-button>
+        <ion-button expand="full" type="submit" [disabled]="formulario.invalid" (click)="onSubmitTemplate()">
+            Actualizar mis Datos
+        </ion-button>
+        <ion-button expand="full" type="submit" color="danger" routerLink="/login">
+            Cerrar sesión
+        </ion-button>
+
+    </form>
+
+</ion-content>

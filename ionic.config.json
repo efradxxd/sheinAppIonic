@@ -1,0 +1,7 @@
+{
+  "name": "sheinapp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

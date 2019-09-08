@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-back-button slot="start" text="Regresar" defaultHref="tabs/home-tabs">
+            </ion-back-button>
+        </ion-buttons>
+        <ion-title>SHEIN</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <!-- <ion-card> -->
+    <img src="{{articulo.imgUrl}}" />
+    <ion-card-header>
+        <ion-card-title>{{articulo.nickName}} ${{articulo.precio}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        {{articulo.descripcion}}
+        <br>
+        <ion-label color="primary">Cantidad</ion-label>
+        <ion-input [(ngModel)]="articulo.cantidad" name="cantidad" type="number" value="1"></ion-input>
+        <ion-label>Talla</ion-label>
+        <ion-select placeholder="Talla" [(ngModel)]="articulo.talla" name="talla">
+            <ion-select-option value="f">S</ion-select-option>
+            <ion-select-option value="m">M</ion-select-option>
+            <ion-select-option value="l">L</ion-select-option>
+        </ion-select>
+        <ion-button color="light" (click)="agregarCarrito()">Agregar a carrito</ion-button>
+        <!-- <ion-button color="light" (click)="navigate(a.departamento)">VER MAS</ion-button> -->
+    </ion-card-content>
+    <!-- </ion-card> -->
+</ion-content>

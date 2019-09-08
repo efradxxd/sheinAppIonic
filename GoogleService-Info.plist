@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>148247271089-htpoo17hu57e7tep9u5r87tm8u0aq01g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.148247271089-htpoo17hu57e7tep9u5r87tm8u0aq01g</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCawGib_pWjt-FBUtq1gNdAGIYSA_onUE8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>148247271089</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sheinapp</string>
+	<key>PROJECT_ID</key>
+	<string>sheinapp-1e05e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sheinapp-1e05e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:148247271089:ios:d3f00ed765185aab</string>
+	<key>DATABASE_URL</key>
+	<string>https://sheinapp-1e05e.firebaseio.com</string>
+</dict>
+</plist>

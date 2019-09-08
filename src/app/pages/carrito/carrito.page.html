@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="Regresar" defaultHref="tabs/home-tabs">
+            </ion-back-button>
+        </ion-buttons>
+        <ion-title>Carrito</ion-title>
+        <ion-buttons slot="end">
+            <ion-label color="dark">
+                <h3><strong>Total</strong></h3>
+                <h5>${{total}}</h5>
+            </ion-label>
+            <ion-button color="primary" (click)="hacerCompra()">
+                <ion-icon name="card"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list *ngIf="mostrar>0">
+        <ion-item *ngFor="let a of articleData">
+            <ion-avatar slot="start">
+                <img src="{{a.imgUrl}}">
+            </ion-avatar>
+            <ion-label color="dark">
+                <h1><strong>{{a.nickName}}</strong></h1>
+                <h2> Cantidad: {{a.cantidad}} <strong>${{a.precioPedido}}</strong> </h2>
+            </ion-label>
+            <!-- <ion-label text-wrap color="dark"> </ion-label> -->
+            <ion-button color="danger" slot="end" (click)="eliminar(a.idPK, a.precioPedido)">
+                <ion-icon name="trash"></ion-icon>
+            </ion-button>
+        </ion-item>
+    </ion-list>
+</ion-content>

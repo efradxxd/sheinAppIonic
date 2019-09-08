@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>SHEIN</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="centrado">
+    <br>
+    <ion-label>Nombre de Usuario</ion-label>
+    <ion-input [(ngModel)]="usuario.nickName" name="nombre" placeholder="ingresa nickname de usuario"></ion-input>
+
+    <ion-label>Contraseña</ion-label>
+    <ion-input [(ngModel)]="usuario.password" name="password" type="password" placeholder="ingresa tu contraseña"></ion-input>
+    <ion-button expand="full" color="primary" (click)="acceder()">Entrar</ion-button>
+    <ion-button expand="full" color="light" routerLink="/registrar" routerLinkActive="router-link-active">Registrate</ion-button>
+    <ion-label color="danger" text-wrap>{{usuario.respuesta}}</ion-label>
+</ion-content>

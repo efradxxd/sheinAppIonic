@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "148247271089",
+    "firebase_url": "https://sheinapp-1e05e.firebaseio.com",
+    "project_id": "sheinapp-1e05e",
+    "storage_bucket": "sheinapp-1e05e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148247271089:android:d3f00ed765185aab",
+        "android_client_info": {
+          "package_name": "com.sheinapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148247271089-nk8t276lh168b0rrmh311b6vt4bss0l9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfrbWSMOhDxXNw7tK3C2dD2rGrWcvgVK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148247271089-nk8t276lh168b0rrmh311b6vt4bss0l9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "148247271089-htpoo17hu57e7tep9u5r87tm8u0aq01g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sheinapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
